@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "MycoAtlas",
+    "slug": "mycoatlas",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.mycoatlas.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "MycoAtlas używa lokalizacji, aby oznaczyć miejsce znalezienia grzybów."
+      }
+    },
+    "android": {
+      "package": "com.mycoatlas.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-status-bar",
+      "expo-font"
+    ]
+  }
+}

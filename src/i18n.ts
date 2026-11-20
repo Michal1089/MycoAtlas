@@ -49,7 +49,22 @@ export const STRINGS: Record<Lang, Record<string, string>> = {
     termsText:
       '1. Aplikacja ma charakter wyłącznie informacyjno-edukacyjny.\n2. Oznaczenia „jadalny" i „niejadalny" nie zastępują oceny grzyboznawcy. Autor nie ponosi odpowiedzialności za skutki spożycia grzybów.\n3. Korzystając z aplikacji, akceptujesz niniejszy regulamin.',
     licensesText:
-      'Aplikacja: © MycoAtlas. Wszelkie prawa zastrzeżone.\n\nOpisy gatunków: opracowanie własne na podstawie powszechnie dostępnej wiedzy mykologicznej.\n\nZdjęcia: dodawane przez autora aplikacji, zgodnie z licencją każdego zdjęcia.\n\nBiblioteki open source: React Native, Expo, React Navigation, React Native SVG, WebView, AsyncStorage, Leaflet (licencje MIT/BSD).\n\nMapa: © autorzy OpenStreetMap (ODbL), kafelki © CARTO.',
+      'Aplikacja: © Michał Brzeziak. Wszelkie prawa zastrzeżone.\n\n' +
+      'Opisy gatunków: opracowanie własne na podstawie powszechnie dostępnej wiedzy mykologicznej.\n\n' +
+      'Zdjęcia: Wikipedia / Wikimedia Commons. Autorzy i licencje (zdjęcia mogą być przycięte):\n' +
+      '• Borowik szlachetny – George Chernilevsky, Public Domain, https://commons.wikimedia.org/wiki/File:Boletus_reticulatus_2016_G1.jpg?uselang=pl#Licencja\n' +
+      '• Kania – Chrumps, Own Work, https://pl.wikipedia.org/wiki/Czubajka_kania#/media/Plik:Macrolepiota-procera.jpg\n' +
+      '• Kurka – Heisenberg-pl, Own Work, https://pl.wikipedia.org/wiki/Pieprznik_jadalny#/media/Plik:Cantharellus_cibarius_20090717-02.jpg\n' +
+      '• Podgrzybek brunatny – H. Krisp, Own Work, https://commons.wikimedia.org/wiki/File:Maronenr%C3%B6hling.jpg\n' +
+      '• Maślak zwyczajny – Jerzy Opioła, Own Work, https://pl.wikipedia.org/wiki/Ma%C5%9Blak_zwyczajny#/media/Plik:Suillus_luteus_2.jpg\n' +
+      '• Mleczaj rydz – Ericsteinert, Own Work,  https://commons.wikimedia.org/wiki/File:Lactarius_deliciosus.jpg\n' +
+      '• Purchawka chropowata – Jerzy Opioła, Own Work, https://pl.wikipedia.org/wiki/Purchawka_chropowata#/media/Plik:Lycoperdon_perlatum_a3.jpg\n' +
+      '• Muchomor czerwony – Onderwijsgek, Own Work, https://pl.wikipedia.org/wiki/Muchomor_czerwony#/media/Plik:Amanita_muscaria_3_vliegenzwammen_op_rij.jpg\n' +
+      '• Muchomor zielonawy – Archenzo, Own Work, https://pl.wikipedia.org/wiki/Muchomor_zielonawy#/media/Plik:Amanita_phalloides_1.JPG\n' +
+      '• Borowik szatański – Archenzo, Own Work, https://pl.wikipedia.org/wiki/Krwistoborowik_szata%C5%84ski#/media/Plik:Boletus_satanas.JPG\n' +
+      '• Gołąbek wymiotny – Jerzy Opioła, Own Work, https://pl.wikipedia.org/wiki/Go%C5%82%C4%85bek_wymiotny#/media/Plik:Russula_emetica_G28.jpg\n' +
+      'Mapa: Android – Google Maps (© Google), iOS – Apple Maps (© Apple). Wyszukiwanie miejsc korzysta z systemowego geokodera.\n\n' +
+      'Biblioteki open source (licencja MIT): React Native, Expo, React Navigation, React Native Maps, React Native SVG, AsyncStorage, Expo Location. Ikony: Ionicons i Material Design Icons (w pakiecie @expo/vector-icons).',
   },
   en: {
     appName: 'MycoAtlas', home: 'Atlas', search: 'Search', saved: 'Collected', profile: 'Profile',
@@ -89,6 +104,21 @@ export const STRINGS: Record<Lang, Record<string, string>> = {
     termsText:
       '1. The app is for information and education only.\n2. “Edible” and “inedible” labels do not replace an expert’s assessment. The author is not liable for consequences of eating mushrooms.\n3. By using the app you accept these terms.',
     licensesText:
-      'App: © MycoAtlas. All rights reserved.\n\nSpecies descriptions: original text based on common mycological knowledge.\n\nPhotos: added by the app author, according to each photo’s license.\n\nOpen source libraries: React Native, Expo, React Navigation, React Native SVG, WebView, AsyncStorage, Leaflet (MIT/BSD licenses).\n\nMap: © OpenStreetMap contributors (ODbL), tiles © CARTO.',
+      'App: © Michał Brzeziak. All rights reserved.\n\n' +
+      'Species descriptions: original text based on common mycological knowledge.\n\n' +
+      'Photos: Wikipedia / Wikimedia Commons. Authors and licenses (photos may be cropped):\n' +
+      '• Porcini – George Chernilevsky, Public Domain, https://commons.wikimedia.org/wiki/File:Boletus_reticulatus_2016_G1.jpg?uselang=pl#Licencja\n' +
+      '• Parasol mushroom – Chrumps, Own Work, https://pl.wikipedia.org/wiki/Czubajka_kania#/media/Plik:Macrolepiota-procera.jpg\n' +
+      '• Chanterelle – Heisenberg-pl, Own Work, https://pl.wikipedia.org/wiki/Pieprznik_jadalny#/media/Plik:Cantharellus_cibarius_20090717-02.jpg\n' +
+      '• Bay bolete – H. Krisp, Own Work, https://commons.wikimedia.org/wiki/File:Maronenr%C3%B6hling.jpg\n' +
+      '• Slippery jack – Jerzy Opioła, Own Work, https://pl.wikipedia.org/wiki/Ma%C5%9Blak_zwyczajny#/media/Plik:Suillus_luteus_2.jpg\n' +
+      '• Saffron milk cap – Ericsteinert, Own Work,  https://commons.wikimedia.org/wiki/File:Lactarius_deliciosus.jpg\n' +
+      '• Common puffball – Jerzy Opioła, Own Work, https://pl.wikipedia.org/wiki/Purchawka_chropowata#/media/Plik:Lycoperdon_perlatum_a3.jpg\n' +
+      '• Fly agaric – Onderwijsgek, Own Work, https://pl.wikipedia.org/wiki/Muchomor_czerwony#/media/Plik:Amanita_muscaria_3_vliegenzwammen_op_rij.jpg\n' +
+      '• Death cap  – Archenzo, Own Work, https://pl.wikipedia.org/wiki/Muchomor_zielonawy#/media/Plik:Amanita_phalloides_1.JPG\n' +
+      '• Devil’s bolete – Archenzo, Own Work, https://pl.wikipedia.org/wiki/Krwistoborowik_szata%C5%84ski#/media/Plik:Boletus_satanas.JPG\n' +
+      '• Sickener  – Jerzy Opioła, Own Work, https://pl.wikipedia.org/wiki/Go%C5%82%C4%85bek_wymiotny#/media/Plik:Russula_emetica_G28.jpg\n' +
+      'Map: Android – Google Maps (© Google), iOS – Apple Maps (© Apple). Place search uses the system geocoder.\n\n' +
+      'Open source libraries (MIT license): React Native, Expo, React Navigation, React Native Maps, React Native SVG, AsyncStorage, Expo Location. Icons: Ionicons and Material Design Icons (bundled in @expo/vector-icons).',
   },
 };

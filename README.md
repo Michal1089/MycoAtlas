@@ -92,23 +92,19 @@ Dane atlasu są dostępne lokalnie, dzięki czemu ich przeglądanie nie wymaga d
 
 Poniżej przedstawiono najważniejsze ekrany aplikacji.
 
-### Ekran główny
-![Ekran główny](screenshots/homescreen.jpg)
+### Główne ekrany
 
-### Wyszukiwarka grzybów
-![Wyszukiwarka](screenshots/searchscreen.jpg)
+| Ekran główny | Wyszukiwarka grzybów |
+|:---:|:---:|
+| <img src="screenshots/homescreen.jpg" width="250"/> | <img src="screenshots/searchscreen.jpg" width="250"/> |
 
-### Interaktywna mapa
-![Mapa](screenshots/mapscreen.jpg)
+| Interaktywna mapa | Moje zbiory |
+|:---:|:---:|
+| <img src="screenshots/mapscreen.jpg" width="250"/> | <img src="screenshots/savedscreen.jpg" width="250"/> |
 
-### Moje zbiory
-![Zbiory](screenshots/savedscreen.jpg)
-
-### Profil i Ustawienia 
-![Zbiory](screenshots/profilescreen.jpg)
-
-### Informacje o grzybie
-![Grzyb](screenshots/mushroomscreen.jpg)
+| Profil i ustawienia | Informacje o grzybie |
+|:---:|:---:|
+| <img src="screenshots/profilescreen.jpg" width="250"/> | <img src="screenshots/mushroomscreen.jpg" width="250"/> |
 
 
 ## Informacje o testowaniu

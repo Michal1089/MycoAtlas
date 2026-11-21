@@ -1,5 +1,3 @@
-// Strona HTML z mapą Leaflet (open source) + kafelki OpenStreetMap w stylu CARTO (jasny/ciemny).
-// Komunikacja z aplikacją: window.ReactNativeWebView.postMessage (z mapy) i window.handle(...) (do mapy).
 export function buildMapHtml(opts: { accent: string; dark: boolean }): string {
   const { accent, dark } = opts;
   return `<!DOCTYPE html>

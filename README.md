@@ -1,38 +1,122 @@
-# MycoAtlas – atlas grzybów polskich (React Native + Expo + TypeScript)
+# MycoAtlas – Atlas Grzybów Polskich
 
-## Uruchomienie
-1. Zainstaluj Node.js LTS oraz aplikację **Expo Go** na telefonie (telefon i komputer w tej samej sieci Wi‑Fi).
-2. W katalogu projektu:
-       rm -rf node_modules package-lock.json
-       npm install
-       npx expo install --check     # powinno napisać, że wersje są zgodne
-       npx expo-doctor
-       npx expo start -c
-3. Zeskanuj kod QR w Expo Go.
+MycoAtlas to aplikacja mobilna stworzona w React Native i Expo, której celem jest ułatwienie poznawania grzybów występujących w Polsce. Aplikacja łączy interaktywny atlas gatunków z wyszukiwarką, osobistym rejestrem zbiorów oraz mapą umożliwiającą zapisywanie miejsc znalezienia grzybów.
 
-## Biblioteki
-react-navigation (native, bottom-tabs, native-stack), react-native-screens,
-react-native-safe-area-context, react-native-svg (wykres i kółka postępu), react-native-webview (mapa), expo-location (lokalizacja),
-@react-native-async-storage/async-storage, @expo/vector-icons, expo-status-bar.
+Projekt został zaprojektowany z myślą o wygodnym użytkowaniu zarówno w domu, jak i podczas grzybobrania.
 
-## Tryb offline
-Poza mapą brak zapytań sieciowych. Dane: `src/data/mushrooms.ts`. Zebrane grzyby i ustawienia: AsyncStorage.
+## Funkcjonalności
 
-## Zdjęcia grzybów – gdzie wpisać ścieżki
-Plik: **`src/data/images.ts`**. Wrzuć zdjęcie do `src/assets/mushrooms/`, odkomentuj linię grzyba
-i wpisz nazwę pliku, np.:
-    'borowik-szlachetny': require('../assets/mushrooms/borowik-szlachetny.jpg'),
-Zdjęcie pojawi się na listach (Atlas, Szukaj, Zebrane, Mapa) oraz na karcie grzyba (okrągłe i duże zdjęcie).
+- **Atlas grzybów** – przeglądanie gatunków, zdjęć oraz informacji o poszczególnych grzybach.
+- **Wyszukiwarka** – szybkie odnajdywanie wybranych gatunków.
+- **Szczegóły gatunków** – dostęp do opisów i informacji o grzybach.
+- **Moje zbiory** – zapisywanie i przeglądanie własnych znalezisk.
+- **Interaktywna mapa** – oznaczanie lokalizacji znalezionych grzybów oraz dodawanie notatek.
+- **Lokalne przechowywanie danych** – zachowywanie zapisanych informacji i ustawień na urządzeniu.
+- **Tryb offline** – dostęp do atlasu i zapisanych danych bez połączenia z internetem.
 
-## Nowy gatunek
-Dopisz obiekt w `src/data/mushrooms.ts` (typ `Mushroom` podpowie pola), a potem dodaj jego `id` w `images.ts`.
+## Wykorzystane technologie
 
-## Mapa
-Zakładka „Mapa": Leaflet (open source) w WebView + kafelki OpenStreetMap w stylu CARTO (jasny/ciemny).
-Dotknij mapy, aby oznaczyć miejsce, wybierz grzyba, dodaj notatkę i zapisz. Miejsca są w pamięci telefonu.
-Uwaga: kafelki mapy i biblioteka Leaflet są pobierane z internetu – bez sieci mapa pokaże komunikat,
-a zapisane miejsca nie znikają. Kod mapy: `src/screens/MapScreen.tsx`, `src/components/mapHtml.ts`.
-Kafelki CARTO/OSM są darmowe do użytku niekomercyjnego (wymagana atrybucja – jest na mapie).
+| Technologia | Zastosowanie |
+|---|---|
+| React Native | Tworzenie aplikacji mobilnej |
+| Expo | Środowisko uruchomieniowe |
+| TypeScript | Typowanie kodu |
+| React Navigation | Nawigacja między ekranami |
+| AsyncStorage | Lokalna pamięć aplikacji |
+| React Native SVG | Elementy graficzne |
+| React Native WebView | Wyświetlanie mapy |
+| Expo Location | Obsługa lokalizacji |
+| Leaflet | Interaktywna mapa |
+| OpenStreetMap / CARTO | Podkład mapowy |
 
-## Uwaga
-Atlas ma charakter informacyjny. Nie jedz grzybów bez oceny grzyboznawcy.
+## Struktura projektu
+
+```text
+MycoAtlas/
+├── src/
+│   ├── assets/
+│   │   └── mushrooms/
+│   ├── components/
+│   ├── data/
+│   │   ├── mushrooms.ts
+│   │   └── images.ts
+│   └── screens/
+├── App.tsx
+├── app.json
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+## Instalacja i uruchomienie
+
+**Wymagania:**
+- Node.js (wersja LTS)
+- npm
+- Expo Go lub emulator Android
+
+**1. Sklonowanie repozytorium**
+
+```bash
+git clone https://github.com/Michal1089/MycoAtlas.git
+```
+
+**2. Przejście do katalogu projektu**
+
+```bash
+cd MycoAtlas
+```
+
+**3. Instalacja zależności**
+
+```bash
+npm install
+```
+
+**4. Uruchomienie aplikacji**
+
+```bash
+npx expo start
+```
+
+Po uruchomieniu serwera należy zeskanować kod QR za pomocą aplikacji Expo Go na urządzeniu mobilnym.
+
+## Przechowywanie danych i tryb offline
+
+Aplikacja wykorzystuje AsyncStorage do lokalnego przechowywania danych użytkownika, takich jak zapisane zbiory i ustawienia.
+
+Dane atlasu są dostępne lokalnie, dzięki czemu ich przeglądanie nie wymaga dostępu do internetu. Interaktywna mapa wymaga natomiast połączenia z siecią do pobierania kafelków mapowych.
+
+## Prezentacja aplikacji
+
+Poniżej przedstawiono najważniejsze ekrany aplikacji.
+
+### Ekran główny
+![Ekran główny](docs/screenshots/home.png)
+
+### Atlas grzybów
+![Atlas](docs/screenshots/atlas.png)
+
+### Szczegóły gatunku
+![Szczegóły gatunku](docs/screenshots/details.png)
+
+### Interaktywna mapa
+![Mapa](docs/screenshots/map.png)
+
+## Informacje o testowaniu
+
+| Parametr | Informacja |
+|---|---|
+| Główna platforma | Android |
+| Środowisko testowe | Expo Go |
+| Testowanie na urządzeniu fizycznym | Tak |
+
+Aplikacja została uruchomiona i przetestowana na fizycznym urządzeniu z systemem Android przy użyciu Expo Go.
+
+## Bezpieczeństwo
+
+MycoAtlas ma charakter informacyjny i edukacyjny. Informacje oraz zdjęcia prezentowane w aplikacji nie zastępują konsultacji z wykwalifikowanym grzyboznawcą. Nie należy spożywać grzybów wyłącznie na podstawie informacji dostępnych w aplikacji.
+
+## Autor
+
+**Michał Brzeziak**

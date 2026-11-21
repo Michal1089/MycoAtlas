@@ -95,11 +95,11 @@ Poniżej przedstawiono najważniejsze ekrany aplikacji.
 ### Główne ekrany
 
 | Ekran główny | Wyszukiwarka grzybów | Interaktywna mapa 
-|:---:|:---:||:---:|
+|:---:|:---:|
 | <img src="screenshots/homescreen.jpg" width="250"/> | <img src="screenshots/searchscreen.jpg" width="250"/> | <img src="screenshots/mapscreen.jpg" width="250"/> 
 
 | Moje zbiory | | Profil i ustawienia | Informacje o grzybie |
-|:---:|:---:|:---:|
+|:---:|:---:|
 | <img src="screenshots/savedscreen.jpg" width="250"/> | <img src="screenshots/profilescreen.jpg" width="250"/> | <img src="screenshots/mushroomscreen.jpg" width="250"/> |
 
 

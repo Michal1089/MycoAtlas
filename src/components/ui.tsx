@@ -10,8 +10,6 @@ import { Mushroom } from '../data/mushrooms';
 import { IMAGES } from '../data/images';
 import { IconName, Nav } from '../types';
 
-/* ---------- przyciski i drobne elementy ---------- */
-
 export function CircleButton({ icon, onPress, dark, size = 56, label }: {
   icon: IconName; onPress?: () => void; dark?: boolean; size?: number; label: string;
 }) {
@@ -135,8 +133,6 @@ export function Empty({ icon, title, text }: { icon: IconName; title: string; te
   );
 }
 
-/* ---------- karty grzybów ---------- */
-
 export function MushroomCard({ m }: { m: Mushroom }) {
   const nav = useNavigation<Nav>();
   const { colors, t, language, favorites, toggleFavorite } = useApp();
@@ -215,8 +211,6 @@ export function InfoRow({ icon, title, sub, pill, last }: {
     </View>
   );
 }
-
-/* ---------- układ ekranu: szare tło + biały arkusz ---------- */
 
 const titleStyle = (color: string, size = 34): TextStyle => ({
   color, fontSize: size, fontWeight: '700', letterSpacing: -1, lineHeight: size + 4,

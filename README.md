@@ -92,7 +92,7 @@ Dane atlasu są dostępne lokalnie, dzięki czemu ich przeglądanie nie wymaga d
 Poniżej przedstawiono najważniejsze ekrany aplikacji.
 
 ### Ekran główny
-![Ekran główny](docs/screenshots/home.png)
+![Ekran główny](downloads/homescreen.jpg)
 
 ### Atlas grzybów
 ![Atlas](docs/screenshots/atlas.png)

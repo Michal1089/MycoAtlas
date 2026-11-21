@@ -26,9 +26,11 @@ Projekt został zaprojektowany z myślą o wygodnym użytkowaniu zarówno w domu
 | AsyncStorage | Lokalna pamięć aplikacji |
 | React Native SVG | Elementy graficzne |
 | React Native WebView | Wyświetlanie mapy |
+| React Native Maps	| Obsługa interaktywnej mapy |
 | Expo Location | Obsługa lokalizacji |
 | Leaflet | Interaktywna mapa |
-| OpenStreetMap / CARTO | Podkład mapowy |
+| Google Maps |	Podkład mapowy na Androidzie |
+| Apple Maps | Podkład mapowy na iOS |
 
 ## Struktura projektu
 

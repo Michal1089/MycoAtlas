@@ -8,10 +8,11 @@ Projekt został zaprojektowany z myślą o wygodnym użytkowaniu zarówno w domu
 
 - **Atlas grzybów** – przeglądanie gatunków, zdjęć oraz informacji o poszczególnych grzybach.
 - **Wyszukiwarka** – szybkie odnajdywanie wybranych gatunków.
-- **Szczegóły gatunków** – dostęp do opisów i informacji o grzybach.
+- **Informacje o grzybie** – dostęp do opisów i informacji o grzybach.
 - **Moje zbiory** – zapisywanie i przeglądanie własnych znalezisk.
 - **Interaktywna mapa** – oznaczanie lokalizacji znalezionych grzybów oraz dodawanie notatek.
 - **Lokalne przechowywanie danych** – zachowywanie zapisanych informacji i ustawień na urządzeniu.
+- **Profil i ustawienia** – personalizacja aplikacji, możliwość zmiany motywu (jasny/ciemny) oraz języka, dostęp do informacji o aplikacji.
 - **Tryb offline** – dostęp do atlasu i zapisanych danych bez połączenia z internetem.
 
 ## Wykorzystane technologie
@@ -92,16 +93,23 @@ Dane atlasu są dostępne lokalnie, dzięki czemu ich przeglądanie nie wymaga d
 Poniżej przedstawiono najważniejsze ekrany aplikacji.
 
 ### Ekran główny
-![Ekran główny](downloads/homescreen.jpg)
+![Ekran główny](screenshots/homescreen.jpg)
 
-### Atlas grzybów
-![Atlas](docs/screenshots/atlas.png)
-
-### Szczegóły gatunku
-![Szczegóły gatunku](docs/screenshots/details.png)
+### Wyszukiwarka grzybów
+![Wyszukiwarka](screenshots/searchscreen.jpg)
 
 ### Interaktywna mapa
-![Mapa](docs/screenshots/map.png)
+![Mapa](screenshots/mapscreen.jpg)
+
+### Moje zbiory
+![Zbiory](screenshots/savedscreen.jpg)
+
+### Profil i Ustawienia 
+![Zbiory](screenshots/profilescreen.jpg)
+
+### Informacje o grzybie
+![Grzyb](screenshots/mushroomscreen.jpg)
+
 
 ## Informacje o testowaniu
 
